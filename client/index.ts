@@ -39,16 +39,13 @@ let MermaidComponent = defineComponent({
 
       let container = document.createElement('div')
 
-      let renderCallback = (codeValue: string): void => {
-        svgCode.value = codeValue
-        document.body.removeChild(container)
-      }
-
       svgCode.value = ''
       document.body.appendChild(container)
 
-      nextTick(() => {
-        render(props.id, code, renderCallback, container)
+      nextTick(async () => {
+        let codeValue = await render(props.id, code, container)
+        svgCode.value = codeValue.svg
+        document.body.removeChild(container)
       })
     })
 
