@@ -24,7 +24,7 @@ let MermaidComponent = defineComponent({
       default: '',
     },
   },
-  setup(props) {
+  setup: props => {
     let el = ref<HTMLDivElement>()
     let svgCode = ref('')
 
