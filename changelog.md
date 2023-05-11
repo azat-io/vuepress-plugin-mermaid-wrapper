@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.2.0](https://github.com/azat-io/vuepress-plugin-mermaid-wrapper/compare/v1.1.0...v1.2.0) (2023-05-11)
+
+
+### Features
+
+* update vuepress ([eddf555](https://github.com/azat-io/vuepress-plugin-mermaid-wrapper/commit/eddf555b40526b027a4f4bfa4eb07a7b5dfaf3cd))
+
 ## [1.1.0](https://github.com/azat-io/vuepress-plugin-mermaid-wrapper/compare/v1.0.0...v1.1.0) (2023-04-14)
 
 
