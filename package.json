@@ -45,21 +45,21 @@
     "vue": "^3.2.47"
   },
   "dependencies": {
-    "@vuepress/client": "2.0.0-beta.61",
-    "@vuepress/core": "2.0.0-beta.61",
-    "@vuepress/utils": "2.0.0-beta.61",
+    "@vuepress/client": "2.0.0-beta.62",
+    "@vuepress/core": "2.0.0-beta.62",
+    "@vuepress/utils": "2.0.0-beta.62",
     "markdown-it": "^13.0.1",
     "mermaid": "10.1.0"
   },
   "devDependencies": {
-    "@azat-io/eslint-config-typescript": "^0.6.1",
+    "@azat-io/eslint-config-typescript": "^0.8.0",
     "@types/markdown-it": "^12.2.3",
     "bumpp": "^9.1.0",
     "clean-publish": "^4.2.0",
-    "eslint": "^8.38.0",
+    "eslint": "^8.40.0",
     "rimraf": "^5.0.0",
     "standard-version": "^9.5.0",
     "typescript": "^5.0.4",
-    "vue": "^3.2.47"
+    "vue": "^3.3.1"
   }
 }

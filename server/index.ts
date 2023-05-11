@@ -21,9 +21,11 @@ export let mermaidWrapperPlugin =
         let originFence = markdownIt.renderer.rules.fence?.bind(
           markdownIt.renderer.rules,
         )
+
         markdownIt.renderer.rules.fence = (...args) => {
           let [tokens, index] = args
           let { info: languageType, content } = tokens[index]
+
           if (content && languageType.trim() === 'mermaid') {
             return `
             <mermaid
@@ -32,9 +34,11 @@ export let mermaidWrapperPlugin =
             ></mermaid>
           `
           }
+
           if (originFence) {
             return `${originFence(...args)}`
           }
+
           return ''
         }
       })
