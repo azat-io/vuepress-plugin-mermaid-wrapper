@@ -4,26 +4,10 @@ import { defineComponent, onMounted, nextTick, ref, h } from 'vue'
 import { defineClientConfig } from '@vuepress/client'
 
 declare let __MERMAID_WRAPPER_THEME_VARIABLES__: {
-  [key: string]: string | boolean
+  [key: string]: boolean | string
 }
 
 let MermaidComponent = defineComponent({
-  name: 'Mermaid',
-  props: {
-    id: {
-      type: String,
-      required: true,
-    },
-    code: {
-      type: String,
-      required: true,
-      default: '',
-    },
-    config: {
-      type: String,
-      default: '',
-    },
-  },
   setup: props => {
     let el = ref<HTMLDivElement>()
     let svgCode = ref('')
@@ -51,11 +35,27 @@ let MermaidComponent = defineComponent({
 
     return (): VNode =>
       h('div', {
-        ref: el,
-        class: ['mermaid'],
         innerHTML: svgCode.value,
+        class: ['mermaid'],
+        ref: el,
       })
   },
+  props: {
+    code: {
+      required: true,
+      type: String,
+      default: '',
+    },
+    config: {
+      type: String,
+      default: '',
+    },
+    id: {
+      required: true,
+      type: String,
+    },
+  },
+  name: 'Mermaid',
 })
 
 export default defineClientConfig({

@@ -7,15 +7,13 @@ let __dirname = getDirname(import.meta.url)
 
 interface MermaidWrapperPluginOptions {
   themeVariables?: {
-    [key: string]: string | boolean
+    [key: string]: boolean | string
   }
 }
 
 export let mermaidWrapperPlugin =
   ({ themeVariables = {} }: MermaidWrapperPluginOptions): Plugin =>
   () => ({
-    name: 'vuepress-plugin-mermaid-wrapper',
-    clientConfigFile: path.resolve(__dirname, '../client/index.js'),
     extendsMarkdown: (md: MarkdownIt) => {
       md.use((markdownIt): void => {
         let originFence = markdownIt.renderer.rules.fence?.bind(
@@ -46,4 +44,6 @@ export let mermaidWrapperPlugin =
     define: {
       __MERMAID_WRAPPER_THEME_VARIABLES__: themeVariables,
     },
+    clientConfigFile: path.resolve(__dirname, '../client/index.js'),
+    name: 'vuepress-plugin-mermaid-wrapper',
   })
