@@ -45,9 +45,9 @@
     "vue": "^3.2.47"
   },
   "dependencies": {
-    "@vuepress/client": "2.0.0-rc.14",
-    "@vuepress/core": "2.0.0-rc.14",
-    "@vuepress/utils": "2.0.0-rc.14",
+    "@vuepress/client": "2.0.0-rc.15",
+    "@vuepress/core": "2.0.0-rc.15",
+    "@vuepress/utils": "2.0.0-rc.15",
     "markdown-it": "^14.1.0",
     "mermaid": "10.9.1"
   },
