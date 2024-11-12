@@ -3,13 +3,14 @@ import type { VNode } from 'vue'
 import { defineComponent, onMounted, nextTick, ref, h } from 'vue'
 import { defineClientConfig } from '@vuepress/client'
 
-declare let __MERMAID_WRAPPER_THEME_VARIABLES__: {
-  [key: string]: boolean | string
-}
+declare let __MERMAID_WRAPPER_THEME_VARIABLES__: Record<
+  string,
+  boolean | string
+>
 
 let MermaidComponent = defineComponent({
   setup: props => {
-    let el = ref<HTMLDivElement>()
+    let element = ref<HTMLDivElement>()
     let svgCode = ref('')
 
     onMounted(async () => {
@@ -24,12 +25,12 @@ let MermaidComponent = defineComponent({
       let container = document.createElement('div')
 
       svgCode.value = ''
-      document.body.appendChild(container)
+      document.body.append(container)
 
-      nextTick(async () => {
+      await nextTick(async () => {
         let codeValue = await render(props.id, code, container)
         svgCode.value = codeValue.svg
-        document.body.removeChild(container)
+        container.remove()
       })
     })
 
@@ -37,7 +38,7 @@ let MermaidComponent = defineComponent({
       h('div', {
         innerHTML: svgCode.value,
         class: ['mermaid'],
-        ref: el,
+        ref: element,
       })
   },
   props: {

@@ -6,9 +6,7 @@ import { getDirname, path, hash } from '@vuepress/utils'
 let __dirname = getDirname(import.meta.url)
 
 interface MermaidWrapperPluginOptions {
-  themeVariables?: {
-    [key: string]: boolean | string
-  }
+  themeVariables?: Record<string, boolean | string>
 }
 
 export let mermaidWrapperPlugin =
@@ -20,8 +18,8 @@ export let mermaidWrapperPlugin =
           markdownIt.renderer.rules,
         )
 
-        markdownIt.renderer.rules.fence = (...args) => {
-          let [tokens, index] = args
+        markdownIt.renderer.rules.fence = (...arguments_) => {
+          let [tokens, index] = arguments_
           let { info: languageType, content } = tokens[index]
 
           if (content && languageType.trim() === 'mermaid') {
@@ -34,7 +32,7 @@ export let mermaidWrapperPlugin =
           }
 
           if (originFence) {
-            return `${originFence(...args)}`
+            return originFence(...arguments_)
           }
 
           return ''
