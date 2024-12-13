@@ -43,7 +43,7 @@
     "@vuepress/core": "2.0.0-rc.19",
     "@vuepress/utils": "2.0.0-rc.19",
     "markdown-it": "^14.1.0",
-    "mermaid": "11.2.1"
+    "mermaid": "11.4.1"
   },
   "devDependencies": {
     "@azat-io/eslint-config": "^2.4.0",
