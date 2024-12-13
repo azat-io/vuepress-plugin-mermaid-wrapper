@@ -46,9 +46,9 @@
     "mermaid": "11.4.1"
   },
   "devDependencies": {
-    "@azat-io/eslint-config": "^2.4.0",
+    "@azat-io/eslint-config": "^2.5.0",
     "@types/markdown-it": "^14.1.2",
-    "bumpp": "^9.8.1",
+    "bumpp": "^9.9.1",
     "clean-publish": "^5.1.0",
     "eslint": "^9.16.0",
     "standard-version": "^9.5.0",
