@@ -20,7 +20,7 @@ export let mermaidWrapperPlugin =
 
         markdownIt.renderer.rules.fence = (...arguments_) => {
           let [tokens, index] = arguments_
-          let { info: languageType, content } = tokens[index]
+          let { info: languageType, content } = tokens[index]!
 
           if (content && languageType.trim() === 'mermaid') {
             return `
