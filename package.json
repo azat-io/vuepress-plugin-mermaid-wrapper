@@ -1,6 +1,6 @@
 {
   "name": "vuepress-plugin-mermaid-wrapper",
-  "version": "1.21.0",
+  "version": "1.22.0",
   "description": "VuePress plugin for using Mermaid",
   "keywords": [
     "diagram",
