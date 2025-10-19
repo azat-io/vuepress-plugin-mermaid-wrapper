@@ -46,16 +46,16 @@
     "mermaid": "11.9.0"
   },
   "devDependencies": {
-    "@azat-io/eslint-config": "^2.46.0",
+    "@azat-io/eslint-config": "^2.52.0",
     "@azat-io/typescript-config": "^1.1.1",
     "@types/markdown-it": "^14.1.2",
-    "@types/node": "^24.3.0",
-    "bumpp": "^10.2.3",
+    "@types/node": "^24.8.1",
+    "bumpp": "^10.3.1",
     "clean-publish": "^5.2.2",
-    "eslint": "^9.34.0",
+    "eslint": "^9.38.0",
     "standard-version": "^9.5.0",
-    "typescript": "^5.9.2",
-    "vue": "^3.5.20"
+    "typescript": "^5.9.3",
+    "vue": "^3.5.22"
   },
   "peerDependencies": {
     "vue": "^3.2.47"
