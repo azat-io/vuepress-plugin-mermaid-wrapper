@@ -39,9 +39,9 @@
     "test:types": "tsc --noEmit --pretty"
   },
   "dependencies": {
-    "@vuepress/client": "2.0.0-rc.25",
-    "@vuepress/core": "2.0.0-rc.25",
-    "@vuepress/utils": "2.0.0-rc.25",
+    "@vuepress/client": "2.0.0-rc.26",
+    "@vuepress/core": "2.0.0-rc.26",
+    "@vuepress/utils": "2.0.0-rc.26",
     "markdown-it": "^14.1.0",
     "mermaid": "11.9.0"
   },
