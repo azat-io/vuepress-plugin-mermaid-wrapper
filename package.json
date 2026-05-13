@@ -44,19 +44,19 @@
     "@vuepress/core": "2.0.0-rc.28",
     "@vuepress/utils": "2.0.0-rc.28",
     "markdown-it": "^14.1.1",
-    "mermaid": "11.14.0"
+    "mermaid": "11.15.0"
   },
   "devDependencies": {
-    "@azat-io/eslint-config": "^2.75.0",
+    "@azat-io/eslint-config": "^2.80.0",
     "@azat-io/typescript-config": "^1.1.1",
     "@types/markdown-it": "^14.1.2",
-    "@types/node": "^25.5.2",
-    "bumpp": "^11.0.1",
-    "clean-publish": "^6.0.5",
-    "eslint": "^10.2.0",
+    "@types/node": "^25.7.0",
+    "bumpp": "^11.1.0",
+    "clean-publish": "^7.0.1",
+    "eslint": "^10.3.0",
     "standard-version": "^9.5.0",
-    "typescript": "^6.0.2",
-    "vue": "^3.5.32"
+    "typescript": "^6.0.3",
+    "vue": "^3.5.34"
   },
   "peerDependencies": {
     "vue": "^3.2.47"
